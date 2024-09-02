@@ -398,7 +398,6 @@ CREATE TABLE nibrs_victim_2021 (
     age_range_low_num smallint,
     age_range_high_num smallint
 );
-\COPY nibrs_victim_2021 (data_year, victim_id, victim_seq_num, victim_type_id, assignment_type_id, activity_type_id, outside_agency_id, age_id, sex_code, race_id, ethnicity_id, resident_status_code, age_range_low_num, age_range_high_num) FROM '/Users/prosas/Documents/Crime Project/NY-2021-Files/NIBRS_VICTIM.csv' CSV DELIMITER ',';
 CREATE TABLE nibrs_victim_circumstances_2021 (
     data_year int,
     victim_id bigint NOT NULL,
