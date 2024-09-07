@@ -14,10 +14,10 @@ accessible. Here we gather offender demographics.
 SELECT
         nibrs_incident_2020.data_year,
         nibrs_month_2020.month_num,
-        nibrs_offender_2020.age_num,
-        nibrs_offender_2020.sex_code,
-        ref_race_2020.race_desc AS race_name,
-        nibrs_ethnicity_2020.ethnicity_name,
+        nibrs_offender_2020.age_num AS offender_age,
+        nibrs_offender_2020.sex_code AS offender_gender,
+        ref_race_2020.race_desc AS offender_race,
+        nibrs_ethnicity_2020.ethnicity_name AS offender_ethnicity,
         nibrs_offense_type_2020.offense_name
 FROM
     nibrs_incident_2020
