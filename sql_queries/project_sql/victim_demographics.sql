@@ -19,7 +19,9 @@ SELECT
         nibrs_victim_2020.sex_code AS victim_gender,
         ref_race_2020.race_desc AS victim_race_name,
         nibrs_ethnicity_2020.ethnicity_name AS victim_ethnicity,
-        nibrs_offense_type_2020.offense_name
+        nibrs_offense_type_2020.offense_name,
+        CONCAT(agencies_2020.county_name,', ',agencies_2020.state_abbr) AS geographic_location
+
 FROM
     nibrs_incident_2020
 
@@ -52,7 +54,9 @@ SELECT
         nibrs_victim_2021.sex_code AS victim_gender,
         ref_race_2021.race_desc AS victim_race_name,
         nibrs_ethnicity_2021.ethnicity_name AS victim_ethnicity,
-        nibrs_offense_type_2021.offense_name
+        nibrs_offense_type_2021.offense_name,
+        CONCAT(agencies_2021.county_name,', ',agencies_2021.state_abbr) AS geographic_location
+
 
 
 FROM
