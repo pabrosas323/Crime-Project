@@ -12,6 +12,7 @@ accessible. Here we gather offender demographics.
 */
 
 SELECT
+        nibrs_incident_2020.incident_id,
         nibrs_incident_2020.data_year,
         nibrs_month_2020.month_num,
         nibrs_offender_2020.age_num AS offender_age,
@@ -39,6 +40,7 @@ LEFT JOIN nibrs_offense_type_2020
     
 UNION ALL
 SELECT
+        nibrs_incident_2021.incident_id,
         nibrs_incident_2021.data_year,
         nibrs_month_2021.month_num,
         CAST(nibrs_offender_2021.age_num AS SMALLINT),

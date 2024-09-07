@@ -12,6 +12,7 @@ accessible. Here we gather victim demographics.
 */
 
 SELECT
+        nibrs_incident_2020.incident_id,
         nibrs_incident_2020.data_year,
         nibrs_month_2020.month_num,
         nibrs_victim_2020.age_num AS victim_age,
@@ -44,6 +45,7 @@ WHERE
     
 UNION ALL
 SELECT
+        nibrs_incident_2021.incident_id,
         nibrs_incident_2021.data_year,
         nibrs_month_2021.month_num,
         CAST(nibrs_victim_2021.age_num AS SMALLINT) AS victim_age,
