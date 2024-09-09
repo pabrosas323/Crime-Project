@@ -97,4 +97,3 @@ LEFT JOIN nibrs_offense_2022
 LEFT JOIN nibrs_offense_type_2022
     ON nibrs_offense_2022.offense_code = nibrs_offense_type_2022.offense_code
 
-LIMIT 100

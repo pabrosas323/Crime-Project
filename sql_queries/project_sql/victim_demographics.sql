@@ -82,5 +82,3 @@ LEFT JOIN nibrs_offense_type_2021
 WHERE
     nibrs_victim_type_2021.victim_type_name = 'Individual'
     
-
-LIMIT 1000;
